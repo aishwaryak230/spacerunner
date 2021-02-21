@@ -1,0 +1,384 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.brand-logo{
+    margin: 1rem;
+}
+.brand-logo a img{
+    width:60%;
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    border-radius: 10px;
+
+}
+.navbar, .right-col{
+    display: none;
+}
+.navbar.active, .right-col.active{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6rem;
+}
+.header{
+    text-align: center;
+}
+nav li{
+    text-align: center;
+    list-style: none;
+    margin-right: 2rem;
+    padding: 10px;
+}
+.navlist li a{
+    font-size:15px;
+    text-decoration: none;
+    color: #3A3A3A;
+    font-family: "Raleway";
+    text-transform: uppercase;
+}
+
+.navlist li:hover{
+    border-bottom: #00A2DF solid 2px;
+}
+.contact{
+    font-size: 15px;
+    padding: 10px;
+    font-family: "Myriad Pro";
+    color: #404041;
+    font-weight: bold;
+}
+.contact i{
+    color: #A5A5A5;
+}
+.demo-btn{
+    background-color: #FFCC00;
+    text-transform: uppercase;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: "Raleway";
+    cursor: pointer;
+    color: #404041;
+    line-height: 1.765;
+    font-weight: bold;
+}
+.section1{
+    padding-top: 30px;
+    background: url(./images/hero.png) no-repeat;
+    width: auto;
+    height: 70vh;
+}
+.main-heading{
+    font-family: "Raleway";
+    text-align: left;
+    margin: 2rem;
+    padding: 3rem;
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 1.2;
+    text-shadow: 0px 4px 21px rgba(0, 0, 0, 0.004);
+}
+
+.main-heading1{
+    text-transform: uppercase;
+}
+.section2{
+    height: auto;
+    width: auto;
+}
+.section2-heading{
+    font-family: "Raleway";
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    padding:.75rem;
+    color:#404041;
+}
+.floorplans-text{
+    margin: 0.5rem;
+    text-align: left;
+    padding:.5rem;
+    font-size: 17px;
+    font-family: "Myriad Pro";
+    color:#404041;
+}
+.floorplans-text-heading1, .floorplans-text-heading2{
+    margin-left: 12px;
+    padding:0 10px;
+    font-size: 16px;
+}
+.floorplans-text ul li{
+    padding: 2.5px;
+}
+.floorplans-img{
+    margin: 1rem 2rem;
+    padding: .25rem 3rem;
+}
+.floorplans-img img{
+    width: 100%;
+    height: 100%;
+}
+.above-footer{
+    text-align: center;
+    text-decoration: underline 3px;
+    font-size: 20px;
+    padding: 20px;
+    color: #FFFFFF;
+    background-color: #00A2DF;
+    font-family: "Open Sans";
+}
+  
+.footer{
+    text-align: center;
+    background-color: #404041;
+    padding: 10px;
+}
+.info-label{
+    text-align: center;
+    margin: 3px;
+    padding: .25rem;
+    width: 100%;
+}
+.contact-info{
+    color:#FFFFFF;
+    font-family: "Open Sans";
+    font-size:15px;   
+    padding: 1rem 3rem;
+}
+.footer-brand-logo{
+    height: auto;
+    background-color: #FFFFFF;
+}
+.footer-brand-logo a img{
+    width: 75%;
+}
+.social-icons a{
+    cursor: pointer;
+    width: 50px;
+    border:2px solid #ddd; 
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #404041;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 27px;
+    -moz-border-radius:27px;
+    -webkit-border-radius:27px;
+    background: #C7C7C7;
+    
+}
+.twitter:before{
+    font-family: "FontAwesome";
+    content: "\f099";
+}
+.twitter:hover{
+    color: #C7C7C7;
+    background:  #404041;
+}
+.facebook:before{
+    font-family: "FontAwesome";
+    content: "\f09a";
+}
+.facebook:hover{
+    color: #C7C7C7;
+    background:  #404041;
+}
+.linkedin:before{
+    font-family: "FontAwesome";
+    content: "\f0e1";
+}
+.linkedin:hover{
+    color: #C7C7C7;
+    background:  #404041;
+}
+.headquarters{
+    color:#FFFFFF;
+    font-family: "Raleway";
+    margin: 1rem 1.5rem;
+    padding:.5rem;
+}
+.branches div{
+    font-family: "Open Sans";
+    margin: 1.25rem;
+    font-size: 15px;
+    padding: 10px;
+}
+@media only screen and (min-width:1200px){
+    .section1{
+        height: 100vh;
+    }
+    .main-heading{
+        font-size: 46px;
+        margin: 10rem 2rem;
+        padding: 6rem;
+    }
+    .section2{
+        height: 70vh;
+    }
+    .section2-heading{
+        padding: 1rem .5rem;
+        font-size: 46px;
+    }
+    .floorplans-text{
+        padding:.5rem;
+        margin: 0.5rem 3rem;
+    }
+    .floorplans-list{
+        margin: 1rem 0;
+    }
+    .floorplans-text-heading1, .floorplans-text-heading2{
+        font-size: small;
+    }
+    .floorplans-text ul li{
+        padding: 7px 0;
+    }
+    .floorplans-img{
+        margin: 0 3rem;
+        padding: 1.25rem;
+    }
+    .social-icons{
+        margin: 1.75rem;
+        padding: 1.25rem;
+    }
+    .footer-brand-logo a img{
+        width: 95%;
+    }
+    .demo-btn{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width:800px){
+    .floorplans{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+    .toggle-button{
+        display: none;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        top: 0;
+        position: absolute;
+        background-color: #FFFFFF;
+        padding: 0 3rem;
+        height: 12vh;
+    }
+    .brand-logo a img{
+        width: 60%;
+        height: 60%;
+    }
+    nav li{
+        flex-direction: column;
+        list-style: none;
+        margin: 5px;
+        padding: 10px;
+    }
+    .demo-btn{
+        margin-right: 10px;
+    }
+    .brand-logo{
+        margin: 0;
+    }
+    .navbar, .right-col{
+        display: flex;
+    }
+    .above-footer{
+        padding: 2rem;
+        text-align: center;
+        text-decoration: underline 5px;
+        font-size: 42px;
+    }
+    .footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #404041;
+        padding: 10px 20px;
+    }
+    .info-label{
+        margin: 5px 0;
+        text-align: left;
+        padding: .25rem;
+        width: 20%;
+    }
+    .contact-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        font-size:15px;   
+        padding: 10px 0;
+    }
+    .footer-brand-logo a img{
+        width: 80%;
+    }
+    .branches{
+        display: flex;
+        flex-direction: row;
+    }
+    .contact-info div{
+        text-align: left;
+        padding-top: .75rem;
+    }
+    .social-icons{
+        padding: .25rem;
+    }
+    .headquarters{
+        text-align: left;
+        margin: 1rem 1.5rem;
+        padding:.5rem;
+    }
+    .headquarters-locations{
+        margin-left: 30px;
+    }
+    .main-heading{
+        text-align: left;
+        margin: 3rem;
+        padding: 5rem;
+    }
+    .floorplans-img{
+        margin: 0 2rem;
+        padding: 0.75rem;
+    }
+}
+
+
+
+
+
+
+
+
